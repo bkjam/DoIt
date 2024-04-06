@@ -709,3 +709,33 @@ lemmy:
   Title: Lemmy
   Icon:
     Simpleicons: lemmy
+
+# 076: Itch.Io
+itchio:
+  Weight: 63
+  Prefix: https://itch.io/profile/
+  Title: Itch.io
+  Icon:
+    Fontawesome:
+      Style: brands
+      Icon: itch-io
+
+# 077: Apple App store
+appleappstore:
+  Weight: 63
+  Prefix: https://apps.apple.com/us/developer/
+  Title: App Store
+  Icon:
+    Fontawesome:
+      Style: brands
+      Icon: app-store
+
+# 078: Google Play Store
+googleplaystore:
+  Weight: 63
+  Prefix: https://play.google.com/store/apps/dev?id=
+  Title: Play Store
+  Icon:
+    Fontawesome:
+      Style: brands
+      Icon: google-play
