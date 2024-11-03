@@ -717,3 +717,41 @@ rss:
     Fontawesome:
       Style: solid
       Icon: rss
+
+####################################################
+# Additional Socials [START]
+####################################################
+
+# Itch.Io
+itchio:
+  Weight: 100
+  Prefix: https://itch.io/profile/
+  Title: Itch.io
+  Icon:
+    Fontawesome:
+      Style: brands
+      Icon: itch-io
+
+# Apple App store
+appleappstore:
+  Weight: 100
+  Prefix: https://apps.apple.com/us/developer/
+  Title: App Store
+  Icon:
+    Fontawesome:
+      Style: brands
+      Icon: app-store
+
+# Google Play Store
+googleplaystore:
+  Weight: 100
+  Prefix: https://play.google.com/store/apps/dev?id=
+  Title: Play Store
+  Icon:
+    Fontawesome:
+      Style: brands
+      Icon: google-play
+
+####################################################
+# Additional Socials [END]
+####################################################
