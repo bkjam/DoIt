@@ -227,6 +227,13 @@ optimizeImages = true
   srcsetLargeResizeMethod = "2000x webp Lanczos q75"
   # {{< version 0.2.14 >}} 版权信息
   license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  # 作者配置
+  [params.author]
+    name = "xxxx"
+    email = ""
+    link = ""
+    avatar = ""
+    gravatarEmail = ""
   # {{< version 0.2.0 >}} 应用图标配置
   [params.app]
     # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
@@ -273,12 +280,13 @@ optimizeImages = true
       useExtendedSearch = false
       ignoreFieldNorm = false
 
+  [params.image]
+    # 缓存图片链接到本地
+    cacheRemote = true
+    # 图片缩放和优化
+    optimise = true
   # 页面头部导航栏配置
   [params.header]
-    # 桌面端导航栏模式 ("fixed", "normal", "auto")
-    desktopMode = "fixed"
-    # 移动端导航栏模式 ("fixed", "normal", "auto")
-    mobileMode = "auto"
     # {{< version 0.2.11 >}} 主题切换模式
     # 主题切换模式 ("switch", "select")
     themeChangeMode = "select"
@@ -502,8 +510,6 @@ optimizeImages = true
       auto = true
     # {{< version 0.2.0 >}} 代码配置
     [params.page.code]
-      # 是否显示代码块的复制按钮
-      copy = true
       # 默认展开显示的代码行数
       maxShownLines = 10
     # {{< version 0.2.14 >}} 表格配置
@@ -523,6 +529,8 @@ optimizeImages = true
       copyTex = true
       # KaTeX 插件 mhchem
       mhchem = true
+      # 使用 MathJax 替代 KaTeX
+      mathjax = false
     # {{< version 0.2.0 >}} {{< link "https://docs.mapbox.com/mapbox-gl-js" "Mapbox GL JS" >}} 配置
     [params.page.mapbox]
       # Mapbox GL JS 的 access token
@@ -868,14 +876,6 @@ optimizeImages = true
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
-
-# 作者配置
-[author]
-  name = "xxxx"
-  email = ""
-  link = ""
-  avatar = ""
-  gravatarEmail = ""
 
 # 网站地图配置
 [sitemap]

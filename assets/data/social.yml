@@ -379,7 +379,7 @@ patreon:
 # 039: Steam
 steam:
   Weight: 39
-  Prefix: https://steamcommunity.com/id/
+  Prefix: https://steamcommunity.com/profiles/
   Title: Steam
   Icon:
     Fontawesome:
@@ -674,9 +674,42 @@ email:
       Style: regular
       Icon: envelope
 
-# 072: RSS
-rss:
+# 072: Discord
+discord:
   Weight: 72
+  Template: https://discordapp.com/users/%v
+  Title: Discord
+  Newtab: true
+  Icon:
+    Simpleicons: discord
+
+# 073: Pixelfed
+pixelfed:
+  Weight: 73
+  Prefix: https://pixelfed.social/
+  Title: Pixelfed
+  Icon:
+    Simpleicons: pixelfed
+
+# 074: Lemmy
+lemmy:
+  Weight: 74
+  Prefix: https://lemmy.world/u/
+  Title: Lemmy
+  Icon:
+    Simpleicons: lemmy
+
+# 075: X
+x:
+  Weight: 75
+  Prefix: https://x.com/
+  Title: X
+  Icon:
+    Simpleicons: x
+
+# 076: RSS
+rss:
+  Weight: 76
   Url: /index.xml
   Title: RSS
   Newtab: true
@@ -685,34 +718,13 @@ rss:
       Style: solid
       Icon: rss
 
-# 073: Discord
-discord:
-  Weight: 73
-  Template: https://discordapp.com/users/%v
-  Title: Discord
-  Newtab: true
-  Icon:
-    Simpleicons: discord
+####################################################
+# Additional Socials [START]
+####################################################
 
-# 074: Pixelfed
-pixelfed:
-  Weight: 74
-  Prefix: https://pixelfed.social/
-  Title: Pixelfed
-  Icon:
-    Simpleicons: pixelfed
-
-# 075: Lemmy
-lemmy:
-  Weight: 75
-  Prefix: https://lemmy.world/u/
-  Title: Lemmy
-  Icon:
-    Simpleicons: lemmy
-
-# 076: Itch.Io
+# Itch.Io
 itchio:
-  Weight: 63
+  Weight: 100
   Prefix: https://itch.io/profile/
   Title: Itch.io
   Icon:
@@ -720,9 +732,9 @@ itchio:
       Style: brands
       Icon: itch-io
 
-# 077: Apple App store
+# Apple App store
 appleappstore:
-  Weight: 63
+  Weight: 100
   Prefix: https://apps.apple.com/us/developer/
   Title: App Store
   Icon:
@@ -730,12 +742,26 @@ appleappstore:
       Style: brands
       Icon: app-store
 
-# 078: Google Play Store
+# Google Play Store
 googleplaystore:
-  Weight: 63
+  Weight: 100
   Prefix: https://play.google.com/store/apps/dev?id=
   Title: Play Store
   Icon:
     Fontawesome:
       Style: brands
       Icon: google-play
+
+# Google Play Store
+threads:
+  Weight: 100
+  Prefix: https://www.threads.net/@
+  Title: Threads
+  Icon:
+    Fontawesome:
+      Style: brands
+      Icon: threads
+
+####################################################
+# Additional Socials [END]
+####################################################

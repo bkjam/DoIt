@@ -222,9 +222,16 @@ Please open the code block below to view the complete sample configuration {{< f
   srcsetSmallResizeMethod = "700x webp Lanczos q75"
   srcsetDefaultResizeMethod = "1200x webp Lanczos q75"
   srcsetLargeResizeMethod = "2000x webp Lanczos q75"
-  # {{< version 0.2.0 >}} App icon config
   # {{< version 0.2.14 >}} License information
   license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+  # Author config
+  [params.author]
+    name = "xxxx"
+    email = ""
+    link = ""
+    avatar = ""
+    gravatarEmail = ""
+  # {{< version 0.2.0 >}} App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
     title = "DoIt"
@@ -269,12 +276,14 @@ Please open the code block below to view the complete sample configuration {{< f
       ignoreLocation = false
       useExtendedSearch = false
       ignoreFieldNorm = false
+
+  [params.image]
+    # cache remote images for better optimisations
+    cacheRemote = true
+    # Image resizing and optimisation
+    optimise = true
   # Header config
   [params.header]
-    # desktop header mode ("fixed", "normal", "auto")
-    desktopMode = "fixed"
-    # mobile header mode ("fixed", "normal", "auto")
-    mobileMode = "auto"
     # {{< version 0.2.11 >}} Theme change mode
     # theme change mode ("switch", "select")
     themeChangeMode = "select"
@@ -509,10 +518,10 @@ Please open the code block below to view the complete sample configuration {{< f
       copyTex = true
       # KaTeX extension mhchem
       mhchem = true
+      # Use MathJax instead of KaTeX
+      mathjax = false
     # {{< version 0.2.0 >}} Code config
     [params.page.code]
-      # whether to show the copy button of the code block
-      copy = true
       # the maximum number of lines of displayed code by default
       maxShownLines = 10
     # {{< version 0.2.14 >}} Table config
@@ -865,14 +874,6 @@ Please open the code block below to view the complete sample configuration {{< f
   [markup.tableOfContents]
     startLevel = 2
     endLevel = 6
-
-# Author config
-[author]
-  name = "xxxx"
-  email = ""
-  link = ""
-  avatar = ""
-  gravatarEmail = ""
 
 # Sitemap config
 [sitemap]
