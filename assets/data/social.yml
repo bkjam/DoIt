@@ -752,6 +752,14 @@ googleplaystore:
       Style: brands
       Icon: google-play
 
+# Tik Tok
+tiktok:
+  Weight: 10
+  Prefix: https://www.tiktok.com/
+  Title: Tik Tok
+  Icon:
+    Simpleicons: tiktok
+
 ####################################################
 # Additional Socials [END]
 ####################################################
